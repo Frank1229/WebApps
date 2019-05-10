@@ -51,12 +51,11 @@
 			$('#mainNav').removeClass('navbar-shrink');
 		}
 	};
-	// Collapse now if page is not at top
-	navbarCollapse();
-	// Collapse the navbar when page is scrolled
-	$(window).scroll(navbarCollapse);
 
-	// Modal popup$(function () {
+	navbarCollapse(); // Collapse now if page is not at top
+
+	$(window).scroll(navbarCollapse); // Collapse the navbar when page is scrolled
+
 	$('.portfolio-item').magnificPopup({
 		type: 'inline',
 		preloader: false,
@@ -84,7 +83,7 @@
 
 	/* 
    VIDEO POP-UP
-   ========================================================================== */
+   ========================================================================== 
 	$('.video-popup').magnificPopup({
 		disableOn: 700,
 		type: 'iframe',
